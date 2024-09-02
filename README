@@ -1,0 +1,39 @@
+Equipe: Beatriz B. Martins, Beatriz M. Reichert, Karine A. Córdova
+Atividade: Implementação de uma Fila Estática Circular Heterogênea Genérica
+
+Dado que não foi especificado uma máquina para testar a implementação, nós utilizamos 
+a ens1. O código está executando sem problemas.
+Nós desenvolvemos as duas aplicações apresentadas pelo professor no Moodle.
+
+A primeira aplicação (Aplicacao_v0.c) tem como objetivo seguir o exemplo apresentado pelo 
+professor em: https://moodle.joinville.udesc.br/mod/assign/view.php?id=101305.
+Isto é, a fila contém um valor inteiro, uma string, uma struct e uma pilha. 
+Desse modo a nossa aplicação insere estes elementos na fila, e em seguida apresenta
+o elemento que está no início. Por fim, esse elemento do início é removido.
+Essas operações de ver início e remover elemento da fila são intercaladas até que a fila
+esteja vazia.
+
+A segunda aplicação (Aplicacao_v1.c) tem como objetivo seguir o modelo de teste do professor que envolve 
+uma fila de pilhas. As operações realizadas aqui são:
+
+// Crie uma fila circular c/ 3 posições
+// Crie 1 pilha c/ 10 posições
+// Empilhe (0,1, ... 8)
+// Enfileire a pilha
+// Crie 1 pilha c/ 10 posições
+// Empilhe (8,7, ... 0)
+// Enfileire a pilha
+// Desempilhe 4 elementos
+// Desenfileire a pilha
+// Imprima o topo da pilha retornada
+// Desenfileire a pilha
+// Destrua a pilha
+// Destrua a fila
+
+Observação: o arquivo pilha.o também foi compilado na máquina ens1.
+
+Comando para executar na máquina ens1:
+    gcc -Wall -o exec Aplicacao_v?.c Fila.c pilha.o
+    ./exec
+
+Substitua o ? pelo número da aplicação desejada (0 ou 1).
